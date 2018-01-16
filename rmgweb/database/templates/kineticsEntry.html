@@ -94,7 +94,7 @@ jQuery(document).ready(
 <li><a href="{% url 'database.views.kinetics' section=section %}">{{ section|title }}</a></li>
 <li><a href="{% url 'database.views.kinetics' section=section subsection=subsection %}">{{ databaseName }}</a></li>
 {% if entry and entry.index and entry.index != -1 %}<li><a href="{% url 'database.views.kineticsEntry' section=section subsection=subsection index=entry.index %}">{{ entry.index }}. {{ entry.label }}</a></li>{% endif %}
-{% if reaction %}<li>{{ reaction }}</li>{% endif %}
+{% if reaction %}<li><a href="">{{ reaction }}</a></li>{% endif %}
 {% endif %}
 
 
